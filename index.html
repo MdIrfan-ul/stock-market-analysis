@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+<body>
+      
+
+
+      <div class="chart-stockContainer">
+        <h1 class="main-heading">Stock Market Analysis</h1>
+        <div class="canvas-WithBtnbox">
+          <div class="canvas-box">
+            <canvas id="myChart" area-lavel="chart" role="img" height="450px" width="700px"></canvas>
+          </div>
+          <div id="btn-container">
+            <button class="time-btn" id="onemtn" onclick="fetchData('1mo')">1 month</button>
+            <button class="time-btn" id="threemtn" onclick="fetchData('3mo')">3 months</button>
+            <button class="time-btn" id="oneYears" onclick="fetchData('1y')">1 year</button>
+            <button class="time-btn" id="fiveYears" onclick="fetchData('5y')">5 years</button>
+          </div>
+
+          <div class="detaits-stocksCont">
+                <h2 id="stockProfitdetails"></h2>
+                <p id="details-para"></p>
+          </div>
+          
+        </div>
+       
+      <!------stock list-->
+        <div id="stock-btnContainer">
+        </div>
+        
+        
+        
+      </div>
+      <!-------------stock time button container---------->
+      
+  
+      <script src="stock.js"></script>
+</body>
+</html>
